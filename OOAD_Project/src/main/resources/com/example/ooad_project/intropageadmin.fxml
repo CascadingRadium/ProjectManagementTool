@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane centerShape="false" prefHeight="670.0" prefWidth="676.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ooad_project.IntroPageAdmin">
+   <children>
+      <TableView fx:id="projectTableView" layoutX="29.0" layoutY="171.0" prefHeight="129.0" prefWidth="619.0">
+         <columns>
+            <TableColumn fx:id="projectName" prefWidth="334.0" text="Project Name" />
+            <TableColumn fx:id="projectStartDate" minWidth="0.0" prefWidth="137.0" text="Start Date" />
+            <TableColumn fx:id="projectEndDate" minWidth="3.0" prefWidth="130.0" text="End Date" />
+         </columns>
+      </TableView>
+      <JFXButton fx:id="addNewProjectBtn" buttonType="RAISED" layoutX="29.0" layoutY="301.0" onAction="#addNewProjectBtnAction" prefHeight="35.0" prefWidth="125.0" styleClass="Btn" text="Add New Project">
+         <font>
+            <Font name="Lato Regular" size="13.0" />
+         </font>
+      </JFXButton>
+      <Pane layoutX="32.0" layoutY="382.0" prefHeight="35.0" prefWidth="619.0">
+         <children>
+            <Label layoutX="100.0" layoutY="5.0" prefHeight="23.0" prefWidth="131.0" text="You have currently">
+               <font>
+                  <Font name="Lato Regular" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="employeeCountLabel" layoutX="238.0" layoutY="5.0" prefHeight="23.0" prefWidth="69.0" text="N">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="331.0" layoutY="5.0" prefHeight="23.0" prefWidth="280.0" text="Employees">
+               <font>
+                  <Font name="Lato Regular" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label alignment="CENTER" layoutX="54.0" layoutY="347.0" prefHeight="35.0" prefWidth="559.0" text="Employees">
+         <font>
+            <Font name="Lato Black" size="18.0" />
+         </font>
+      </Label>
+      <TableView fx:id="employeeTableView" layoutX="24.0" layoutY="419.0" prefHeight="129.0" prefWidth="619.0">
+         <columns>
+            <TableColumn fx:id="employeeId" prefWidth="39.5" text="ID" />
+            <TableColumn fx:id="employeeName" minWidth="0.0" prefWidth="137.97411346435547" text="Name" />
+            <TableColumn fx:id="employeeDesignation" minWidth="0.0" prefWidth="122.5" text="Designation" />
+         </columns>
+      </TableView>
+      <JFXButton fx:id="addEmployeeBtn" buttonType="RAISED" layoutX="24.0" layoutY="562.0" onAction="#addEmployeeBtnAction" prefHeight="30.0" prefWidth="109.0" styleClass="Btn" text="Add Employee">
+         <font>
+            <Font name="Lato Regular" size="13.0" />
+         </font>
+      </JFXButton>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="54.0" layoutY="99.0" prefHeight="35.0" prefWidth="559.0" text="Projects">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Pane layoutX="32.0" layoutY="136.0" prefHeight="35.0" prefWidth="619.0">
+         <children>
+            <Label layoutX="94.0" layoutY="5.0" prefHeight="23.0" prefWidth="131.0" text="You have currently">
+               <font>
+                  <Font name="Lato Regular" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="projectCountLabel" layoutX="238.0" layoutY="5.0" prefHeight="23.0" prefWidth="69.0" text="N">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="331.0" layoutY="5.0" prefHeight="23.0" prefWidth="280.0" text="Projects">
+               <font>
+                  <Font name="Lato Regular" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <JFXButton fx:id="allEmployeeBtn" buttonType="RAISED" layoutX="534.0" layoutY="562.0" onAction="#allEmployeeBtnAction" prefHeight="30.0" prefWidth="109.0" styleClass="Btn" text="All Employee">
+         <font>
+            <Font name="Lato Regular" size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="allProjectBtn" buttonType="RAISED" layoutX="534.0" layoutY="301.0" onAction="#allProjectsBtnAction" prefHeight="35.0" prefWidth="125.0" styleClass="Btn" text="All Projects">
+         <font>
+            <Font name="Lato Regular" size="13.0" />
+         </font>
+      </JFXButton>
+      <Label contentDisplay="RIGHT" layoutX="54.0" layoutY="31.0" prefHeight="77.0" prefWidth="567.0" text="                           Software Project Management Tool">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</AnchorPane>
